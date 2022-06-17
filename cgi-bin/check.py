@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-
+import time
 from skpy import Skype
 from getpass import getpass
 import cgi
@@ -37,8 +37,12 @@ for user in targetusers:
 #本文指定
 msg += mode["message"]
 
+form = cgi.FieldStorage()
+msg =+ form.getvalue('button')
+
 #送信
 channel.sendMsg(msg,rich=True)
+
 
 #index.html移動
 movepage.html()
