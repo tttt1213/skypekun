@@ -1,0 +1,91 @@
+{
+ "TEST":{
+            "PROFILE":{
+                        "username":"mori.takuro.sw@gmail.com",
+                        "password":"SystemWorks"
+                        },
+            "USERID":{
+                        "miyazaki" : "8:live:.cid.8d6854d7c89c09a1",
+                        "nakanishi" : "8:live:.cid.3c7cbe1df3af80b8",
+                        "kompo" : "8:live:.cid.2f70515510ed9b39",
+                        "mori" : "8:live:.cid.d3baa70d05421bec"
+                        },
+            "GROUPID":{
+                        "shipping":"19:0523eac33ce74ddf9e41ff98c2e3f7a5@thread.skype",
+                        "receive":"19:fd3f945c87e34851a69bcadd5aee491c@thread.skype",
+                        "testgroup":"19:56fd3b25b50642e189fc9dd53bc7ed2b@thread.skype"
+                        }
+        },
+"PRODUCTION":{
+                "PROFILE":{
+                        "username":"mori@systemworks.co.jp",
+                        "password":"SystemWorks"
+                        },
+                "USERID":{
+                        "miyazaki" : "8:live:.cid.8d6854d7c89c09a1",
+                        "nakanishi" : "8:live:.cid.3c7cbe1df3af80b8",
+                        "kompo" : "8:live:.cid.2f70515510ed9b39",
+                        "mori" : "8:live:.cid.d3baa70d05421bec"
+                        },
+                "GROUPID":{
+                        "shipping":"19:0523eac33ce74ddf9e41ff98c2e3f7a5@thread.skype",
+                        "receive":"19:fd3f945c87e34851a69bcadd5aee491c@thread.skype",
+                        "testgroup":"19:56fd3b25b50642e189fc9dd53bc7ed2b@thread.skype"
+                        },
+                "shipping":{
+                        "targetusers":["miyazaki","nakanishi","kompo"],
+                        "targetgroup":"shipping",
+                        "message":"テスト完了品の準備ができました。"
+                        },
+                "noshipping":{
+                        "targetusers":["miyazaki","nakanishi","kompo"],
+                        "targetgroup":"shipping",
+                        "message":"テスト完了品はありません。"
+                        },
+                "yamato":{
+                        "targetusers":[],
+                        "targetgroup":"shipping",
+                        "message":"ヤマト集荷完了しました。"
+                        },
+                "arrow":{
+                        "targetusers":[],
+                        "targetgroup":"shipping",
+                        "message":"日通集荷完了しました。"
+                        },
+                "JIT":{
+                        "targetusers":[],
+                        "targetgroup":"shipping",
+                        "message":"JIT集荷完了しました。"
+                        },
+                "seino":{
+                        "targetusers":[],
+                        "targetgroup":"shipping",
+                        "message":"西濃集荷完了しました。"
+                        },
+                "sagawa":{
+                        "targetusers":[],
+                        "targetgroup":"shipping",
+                        "message":"佐川集荷完了しました。"
+                        },
+                "parts":{
+                        "targetusers":[],
+                        "targetgroup":"receive",
+                        "message":"パーツ入荷しました"
+                        },
+                "repair":{
+                        "targetusers":[],
+                        "targetgroup":"receive",
+                        "message":"修理システム入荷しました。"
+                        },
+                "test_nouser":{
+                        "targetusers":[],
+                        "targetgroup":"testgroup",
+                        "message":"メンションなしテスト"
+                        },
+                "test":{
+                        "targetusers":["mori","mori"],
+                        "targetgroup":"testgroup",
+                        "message":"メンション有りテスト"
+                        }
+}
+}
