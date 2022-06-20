@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-
+import time
 from skpy import Skype
 from getpass import getpass
 import cgi
@@ -7,12 +7,17 @@ import codecs
 import movepage
 import json 
 
+form = cgi.FieldStorage()
+button  = form["button"].value
+#print("")
+#print (button)
+
 #JSON読み込み
 settings = open('cgi-bin/settings.json' , 'r') 
 settings = json.load(settings) 
 
 #環境設定
-mode = settings["PRODUCTION"]["yamato"]
+mode = settings["PRODUCTION"][button]
 
 username = settings["PRODUCTION"]["PROFILE"]["username"]#ログインネーム
 password = settings["PRODUCTION"]["PROFILE"]["password"]#ログインパスワード
@@ -37,6 +42,7 @@ msg += mode["message"]
 
 #送信
 channel.sendMsg(msg,rich=True)
+
 
 #index.html移動
 movepage.html()

@@ -77,12 +77,12 @@
                         "targetgroup":"receive",
                         "message":"修理システム入荷しました。"
                         },
-                "test_nouser":{
+                "test1":{
                         "targetusers":[],
                         "targetgroup":"testgroup",
                         "message":"メンションなしテスト"
                         },
-                "test":{
+                "test2":{
                         "targetusers":["mori","mori"],
                         "targetgroup":"testgroup",
                         "message":"メンション有りテスト"
